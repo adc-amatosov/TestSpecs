@@ -20,13 +20,13 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'TestSpecs/Classes/**/*'
-  s.dependency "ReactiveCocoa"
 
   s.test_spec "Tests" do |ts|
     ts.ios.source_files = "Tests/**/*.{h,m,mm,swift}"
 
     ts.ios.dependency "Specta"
     ts.ios.dependency "Expecta"
+    ts.dependency "ReactiveCocoa"
   end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

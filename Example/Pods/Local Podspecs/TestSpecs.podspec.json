@@ -18,11 +18,6 @@
     "ios": "8.0"
   },
   "source_files": "TestSpecs/Classes/**/*",
-  "dependencies": {
-    "ReactiveCocoa": [
-
-    ]
-  },
   "testspecs": [
     {
       "name": "Tests",
@@ -37,6 +32,11 @@
 
           ]
         }
+      },
+      "dependencies": {
+        "ReactiveCocoa": [
+
+        ]
       }
     }
   ]
