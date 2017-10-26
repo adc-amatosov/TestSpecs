@@ -23,6 +23,7 @@
 
     ]
   },
+  "frameworks": "Accelerate",
   "testspecs": [
     {
       "name": "Tests",
@@ -37,7 +38,8 @@
 
           ]
         }
-      }
+      },
+      "frameworks": "CoreTelephony"
     }
   ]
 }
