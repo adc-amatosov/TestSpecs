@@ -1,0 +1,43 @@
+{
+  "name": "TestSpecs",
+  "version": "0.1.0",
+  "summary": "A test for TestSpecs.",
+  "homepage": "https://github.com/anton-matosov/TestSpecs",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "anton-matosov": "amatosov.ctr@auction.com"
+  },
+  "source": {
+    "git": "https://github.com/anton-matosov/TestSpecs.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TestSpecs/Classes/**/*",
+  "dependencies": {
+    "ReactiveCocoa": [
+
+    ]
+  },
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "ios": {
+        "source_files": "Tests/**/*.{h,m,mm,swift}",
+        "dependencies": {
+          "Specta": [
+
+          ],
+          "Expecta": [
+
+          ]
+        }
+      }
+    }
+  ]
+}
