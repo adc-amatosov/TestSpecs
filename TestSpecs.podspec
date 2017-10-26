@@ -21,12 +21,15 @@ Pod::Spec.new do |s|
 
   s.source_files = 'TestSpecs/Classes/**/*'
   s.dependency "ReactiveCocoa"
+  s.frameworks = "Accelerate"
 
   s.test_spec "Tests" do |ts|
     ts.ios.source_files = "Tests/**/*.{h,m,mm,swift}"
 
     ts.ios.dependency "Specta"
     ts.ios.dependency "Expecta"
+
+    ts.frameworks = "CoreTelephony"
   end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
