@@ -1724,28 +1724,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0672A0D945089ABAD8AD9FD953FFACAC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71FE00F85CBDA413D1B1523059C882C6 /* TestSpecs.unit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-lswiftSwiftOnoneSupport",
-				);
-				PRODUCT_NAME = "TestSpecs-Unit-Tests";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-			};
-			name = Debug;
-		};
 		1255CFCEDA2D40BBC3C53FBC6C403BE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9EF4498586F4A4114442E0F916DC08BC /* Result.xcconfig */;
@@ -1994,24 +1972,6 @@
 			};
 			name = Debug;
 		};
-		804BCAFFAFC287DD526B329ABB032CE6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71FE00F85CBDA413D1B1523059C882C6 /* TestSpecs.unit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "TestSpecs-Unit-Tests";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-			};
-			name = Release;
-		};
 		823E60F9DF8B0738D59D4AE05C3A6887 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8AC881A497392372A5BB807A7FF74BC2 /* Specta.xcconfig */;
@@ -2044,6 +2004,30 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		8872FC6B5DDC346F8A4FDF9E1D020D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71FE00F85CBDA413D1B1523059C882C6 /* TestSpecs.unit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lswiftSwiftOnoneSupport",
+				);
+				PRODUCT_NAME = "TestSpecs-Unit-Tests";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
 		};
 		96E3F1F524A3CC8F07FC60972E30C5D2 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2342,6 +2326,26 @@
 			};
 			name = Debug;
 		};
+		F632EE1662A181F9D22873999BE54454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71FE00F85CBDA413D1B1523059C882C6 /* TestSpecs.unit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "TestSpecs-Unit-Tests";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2411,8 +2415,8 @@
 		84BE501C357B9544B614A4C2BE50451A /* Build configuration list for PBXNativeTarget "TestSpecs-Unit-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0672A0D945089ABAD8AD9FD953FFACAC /* Debug */,
-				804BCAFFAFC287DD526B329ABB032CE6 /* Release */,
+				8872FC6B5DDC346F8A4FDF9E1D020D58 /* Debug */,
+				F632EE1662A181F9D22873999BE54454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
