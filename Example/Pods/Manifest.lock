@@ -6,7 +6,8 @@ PODS:
     - Result (~> 3.2)
   - Result (3.2.4)
   - Specta (1.0.7)
-  - TestSpecs (0.1.0)
+  - TestSpecs (0.1.0):
+    - ReactiveCocoa
   - TestSpecs/Tests (0.1.0):
     - Expecta
     - ReactiveCocoa
@@ -26,7 +27,7 @@ SPEC CHECKSUMS:
   ReactiveSwift: 60a29ff35988a964fd2bb759755cb6594de523fc
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  TestSpecs: bd34a8449ac2eb3e27a9b304f2426b748fd05ba7
+  TestSpecs: 5b52d5bd81a32cbc3ef885fcbdb53556555cc8de
 
 PODFILE CHECKSUM: fac329b46fd70604be2e4d8d87d545f77913423b
 
