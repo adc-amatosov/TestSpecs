@@ -19,9 +19,13 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'TestSpecs/Classes/**/*'
-  s.dependency "ReactiveCocoa"
-  s.frameworks = "Accelerate"
+  s.ios.source_files = 'TestSpecs/Classes/**/*'
+  s.ios.dependency "ReactiveCocoa"
+  s.ios.frameworks = "Accelerate"
+
+  s.watchos.deployment_target = '4.0'
+  s.watchos.source_files = 'TestSpecs/Watch/**/*'
+  s.watchos.dependency "ReactiveCocoa"
 
   s.test_spec "Tests" do |ts|
     ts.ios.source_files = "Tests/**/*.{h,m,mm,swift}"
@@ -32,7 +36,4 @@ Pod::Spec.new do |s|
     ts.frameworks = "CoreTelephony"
   end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

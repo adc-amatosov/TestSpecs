@@ -1,7 +1,15 @@
-platform :ios, "11"
 use_frameworks!
 
-target 'TestSpecs_Dummy' do
+target 'SimpleApp' do
+  platform :ios, "11"
   pod 'TestSpecs', :path => '../', :testspecs => ["Tests"]
+end
 
+target 'SimpleWatch' do
+  platform :watchos, "4"
+end
+
+target 'SimpleWatch Extension' do
+  platform :watchos, "4"
+  pod 'TestSpecs', :path => '../', :testspecs => ["Tests"] # THIS testspecs crashes pod install
 end

@@ -7,26 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7588F553E21019D015024136 /* Pods_SimpleWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D935A68DDAE05F3E15E747 /* Pods_SimpleWatch_Extension.framework */; };
 		7C76D5661FA26B3F006A72F8 /* TestSpecs_Dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C76D5651FA26B3F006A72F8 /* TestSpecs_Dummy.m */; };
-		B1208325ADAABC0B93FBA551 /* Pods_TestSpecs_Dummy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C12414F5ABAF7BAE5BBDDBA /* Pods_TestSpecs_Dummy.framework */; };
+		7C7905441FA2CBD30080E7D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7905431FA2CBD30080E7D4 /* AppDelegate.swift */; };
+		7C7905461FA2CBD30080E7D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7905451FA2CBD30080E7D4 /* ViewController.swift */; };
+		7C7905491FA2CBD30080E7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7905471FA2CBD30080E7D4 /* Main.storyboard */; };
+		7C79054B1FA2CBD30080E7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C79054A1FA2CBD30080E7D4 /* Assets.xcassets */; };
+		7C79054E1FA2CBD30080E7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C79054C1FA2CBD30080E7D4 /* LaunchScreen.storyboard */; };
+		7C7905591FA2CBDC0080E7D4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7905571FA2CBDC0080E7D4 /* Interface.storyboard */; };
+		7C79055B1FA2CBDC0080E7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C79055A1FA2CBDC0080E7D4 /* Assets.xcassets */; };
+		7C7905621FA2CBDC0080E7D4 /* SimpleWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7C7905611FA2CBDC0080E7D4 /* SimpleWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7C7905671FA2CBDC0080E7D4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7905661FA2CBDC0080E7D4 /* InterfaceController.swift */; };
+		7C7905691FA2CBDC0080E7D4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7905681FA2CBDC0080E7D4 /* ExtensionDelegate.swift */; };
+		7C79056B1FA2CBDC0080E7D4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79056A1FA2CBDC0080E7D4 /* NotificationController.swift */; };
+		7C79056D1FA2CBDC0080E7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C79056C1FA2CBDC0080E7D4 /* Assets.xcassets */; };
+		7C7905731FA2CBDC0080E7D4 /* SimpleWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7C7905551FA2CBDC0080E7D4 /* SimpleWatch.app */; };
+		F4539F55D3C2EF75CACABE78 /* Pods_SimpleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139790B0F54524965C21F3AA /* Pods_SimpleApp.framework */; };
+		FBA8F84C8F57E2E1ED35C56B /* Pods_SimpleWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A31855A786D545F7351FB7 /* Pods_SimpleWatch.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7C7905631FA2CBDC0080E7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C7905601FA2CBDC0080E7D4;
+			remoteInfo = "SimpleWatch Extension";
+		};
+		7C7905701FA2CBDC0080E7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C7905541FA2CBDC0080E7D4;
+			remoteInfo = SimpleWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7C7905721FA2CBDC0080E7D4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7C7905731FA2CBDC0080E7D4 /* SimpleWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7905771FA2CBDC0080E7D4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7C7905621FA2CBDC0080E7D4 /* SimpleWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		139790B0F54524965C21F3AA /* Pods_SimpleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C12414F5ABAF7BAE5BBDDBA /* Pods_TestSpecs_Dummy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSpecs_Dummy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2932703FD25DF7C25B804AC6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		4F10577353D55AE633D9CAAC /* Pods-TestSpecs_Dummy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSpecs_Dummy.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSpecs_Dummy/Pods-TestSpecs_Dummy.release.xcconfig"; sourceTree = "<group>"; };
+		3251CD6718D6E4A8CC3C6E9C /* Pods-SimpleWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleWatch/Pods-SimpleWatch.release.xcconfig"; sourceTree = "<group>"; };
+		3616B04926EADA56B948C57A /* Pods-SimpleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleApp/Pods-SimpleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		64F979DE80B1E1AA4C2F8704 /* Pods-TestSpecs_Dummy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSpecs_Dummy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSpecs_Dummy/Pods-TestSpecs_Dummy.debug.xcconfig"; sourceTree = "<group>"; };
 		7C76D5631FA26B3F006A72F8 /* TestSpecs_Dummy.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSpecs_Dummy.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C76D5651FA26B3F006A72F8 /* TestSpecs_Dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSpecs_Dummy.m; sourceTree = "<group>"; };
 		7C76D5671FA26B3F006A72F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C7905411FA2CBD20080E7D4 /* SimpleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C7905431FA2CBD30080E7D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C7905451FA2CBD30080E7D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C7905481FA2CBD30080E7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C79054A1FA2CBD30080E7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C79054D1FA2CBD30080E7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C79054F1FA2CBD30080E7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C7905551FA2CBDC0080E7D4 /* SimpleWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C7905581FA2CBDC0080E7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7C79055A1FA2CBDC0080E7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C79055C1FA2CBDC0080E7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C7905611FA2CBDC0080E7D4 /* SimpleWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SimpleWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C7905661FA2CBDC0080E7D4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7C7905681FA2CBDC0080E7D4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7C79056A1FA2CBDC0080E7D4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7C79056C1FA2CBDC0080E7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C79056E1FA2CBDC0080E7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C79056F1FA2CBDC0080E7D4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		88C9B375742982E167DCE15D /* Pods-SimpleWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleWatch/Pods-SimpleWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		8A5487E93E436FE12D6AE474 /* Pods-SimpleWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleWatch Extension/Pods-SimpleWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		98D935A68DDAE05F3E15E747 /* Pods_SimpleWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72D73FC4531838C496187FC /* TestSpecs.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TestSpecs.podspec; path = ../TestSpecs.podspec; sourceTree = "<group>"; };
 		AB7D869B0C8C8C3C356BAD68 /* Pods-TestSpecs_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSpecs_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSpecs_Tests/Pods-TestSpecs_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AEB9ABF811AF7BAE723F4303 /* Pods-TestSpecs_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSpecs_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSpecs_Tests/Pods-TestSpecs_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B79AF7A869921C0B15AD733B /* Pods-SimpleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleApp/Pods-SimpleApp.release.xcconfig"; sourceTree = "<group>"; };
+		C4A31855A786D545F7351FB7 /* Pods_SimpleWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C685F6460BA34DE41991FF6B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D5C97944E22D9C3FBCD312D0 /* Pods-SimpleWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleWatch Extension/Pods-SimpleWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		E0D09E956D86B924896B049A /* Pods_TestSpecs_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSpecs_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -35,7 +117,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1208325ADAABC0B93FBA551 /* Pods_TestSpecs_Dummy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C79053E1FA2CBD20080E7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4539F55D3C2EF75CACABE78 /* Pods_SimpleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C79055E1FA2CBDC0080E7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7588F553E21019D015024136 /* Pods_SimpleWatch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB4E8AF43682779B6627B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA8F84C8F57E2E1ED35C56B /* Pods_SimpleWatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +152,9 @@
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				7C76D5641FA26B3F006A72F8 /* TestSpecs_Dummy */,
+				7C7905421FA2CBD30080E7D4 /* SimpleApp */,
+				7C7905561FA2CBDC0080E7D4 /* SimpleWatch */,
+				7C7905651FA2CBDC0080E7D4 /* SimpleWatch Extension */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				7BF667A02B6DC9536D816185 /* Pods */,
@@ -57,6 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				7C76D5631FA26B3F006A72F8 /* TestSpecs_Dummy.xctest */,
+				7C7905411FA2CBD20080E7D4 /* SimpleApp.app */,
+				7C7905551FA2CBDC0080E7D4 /* SimpleWatch.app */,
+				7C7905611FA2CBDC0080E7D4 /* SimpleWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +181,9 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				E0D09E956D86B924896B049A /* Pods_TestSpecs_Tests.framework */,
 				1C12414F5ABAF7BAE5BBDDBA /* Pods_TestSpecs_Dummy.framework */,
+				139790B0F54524965C21F3AA /* Pods_SimpleApp.framework */,
+				C4A31855A786D545F7351FB7 /* Pods_SimpleWatch.framework */,
+				98D935A68DDAE05F3E15E747 /* Pods_SimpleWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,8 +203,12 @@
 			children = (
 				AEB9ABF811AF7BAE723F4303 /* Pods-TestSpecs_Tests.debug.xcconfig */,
 				AB7D869B0C8C8C3C356BAD68 /* Pods-TestSpecs_Tests.release.xcconfig */,
-				64F979DE80B1E1AA4C2F8704 /* Pods-TestSpecs_Dummy.debug.xcconfig */,
-				4F10577353D55AE633D9CAAC /* Pods-TestSpecs_Dummy.release.xcconfig */,
+				3616B04926EADA56B948C57A /* Pods-SimpleApp.debug.xcconfig */,
+				B79AF7A869921C0B15AD733B /* Pods-SimpleApp.release.xcconfig */,
+				D5C97944E22D9C3FBCD312D0 /* Pods-SimpleWatch Extension.debug.xcconfig */,
+				8A5487E93E436FE12D6AE474 /* Pods-SimpleWatch Extension.release.xcconfig */,
+				88C9B375742982E167DCE15D /* Pods-SimpleWatch.debug.xcconfig */,
+				3251CD6718D6E4A8CC3C6E9C /* Pods-SimpleWatch.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -104,6 +222,42 @@
 			path = TestSpecs_Dummy;
 			sourceTree = "<group>";
 		};
+		7C7905421FA2CBD30080E7D4 /* SimpleApp */ = {
+			isa = PBXGroup;
+			children = (
+				7C7905431FA2CBD30080E7D4 /* AppDelegate.swift */,
+				7C7905451FA2CBD30080E7D4 /* ViewController.swift */,
+				7C7905471FA2CBD30080E7D4 /* Main.storyboard */,
+				7C79054A1FA2CBD30080E7D4 /* Assets.xcassets */,
+				7C79054C1FA2CBD30080E7D4 /* LaunchScreen.storyboard */,
+				7C79054F1FA2CBD30080E7D4 /* Info.plist */,
+			);
+			path = SimpleApp;
+			sourceTree = "<group>";
+		};
+		7C7905561FA2CBDC0080E7D4 /* SimpleWatch */ = {
+			isa = PBXGroup;
+			children = (
+				7C7905571FA2CBDC0080E7D4 /* Interface.storyboard */,
+				7C79055A1FA2CBDC0080E7D4 /* Assets.xcassets */,
+				7C79055C1FA2CBDC0080E7D4 /* Info.plist */,
+			);
+			path = SimpleWatch;
+			sourceTree = "<group>";
+		};
+		7C7905651FA2CBDC0080E7D4 /* SimpleWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7C7905661FA2CBDC0080E7D4 /* InterfaceController.swift */,
+				7C7905681FA2CBDC0080E7D4 /* ExtensionDelegate.swift */,
+				7C79056A1FA2CBDC0080E7D4 /* NotificationController.swift */,
+				7C79056C1FA2CBDC0080E7D4 /* Assets.xcassets */,
+				7C79056E1FA2CBDC0080E7D4 /* Info.plist */,
+				7C79056F1FA2CBDC0080E7D4 /* PushNotificationPayload.apns */,
+			);
+			path = "SimpleWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,12 +265,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C76D5681FA26B3F006A72F8 /* Build configuration list for PBXNativeTarget "TestSpecs_Dummy" */;
 			buildPhases = (
-				59693C2BA26D86C210A3E6CE /* [CP] Check Pods Manifest.lock */,
 				7C76D55F1FA26B3F006A72F8 /* Sources */,
 				7C76D5601FA26B3F006A72F8 /* Frameworks */,
 				7C76D5611FA26B3F006A72F8 /* Resources */,
-				6BDA53F639B98BFA6E69D885 /* [CP] Embed Pods Frameworks */,
-				7336C09ABC7DC917D3BE7695 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +278,68 @@
 			productReference = 7C76D5631FA26B3F006A72F8 /* TestSpecs_Dummy.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7C7905401FA2CBD20080E7D4 /* SimpleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C7905521FA2CBD30080E7D4 /* Build configuration list for PBXNativeTarget "SimpleApp" */;
+			buildPhases = (
+				B6043996311383B8FA9C6734 /* [CP] Check Pods Manifest.lock */,
+				7C79053D1FA2CBD20080E7D4 /* Sources */,
+				7C79053E1FA2CBD20080E7D4 /* Frameworks */,
+				7C79053F1FA2CBD20080E7D4 /* Resources */,
+				7C7905721FA2CBDC0080E7D4 /* Embed Watch Content */,
+				3045D0204FBD0B1B149F66FF /* [CP] Embed Pods Frameworks */,
+				4B9DB3AB98A9A43E700066CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C7905711FA2CBDC0080E7D4 /* PBXTargetDependency */,
+			);
+			name = SimpleApp;
+			productName = SimpleApp;
+			productReference = 7C7905411FA2CBD20080E7D4 /* SimpleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C7905541FA2CBDC0080E7D4 /* SimpleWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C7905781FA2CBDC0080E7D4 /* Build configuration list for PBXNativeTarget "SimpleWatch" */;
+			buildPhases = (
+				D5B56C266EB40F13B2C8DB6D /* [CP] Check Pods Manifest.lock */,
+				7C7905531FA2CBDC0080E7D4 /* Resources */,
+				7C7905771FA2CBDC0080E7D4 /* Embed App Extensions */,
+				7CB4E8AF43682779B6627B27 /* Frameworks */,
+				CDBF7EBD6D6F6CFC6B652D61 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C7905641FA2CBDC0080E7D4 /* PBXTargetDependency */,
+			);
+			name = SimpleWatch;
+			productName = SimpleWatch;
+			productReference = 7C7905551FA2CBDC0080E7D4 /* SimpleWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7C7905601FA2CBDC0080E7D4 /* SimpleWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C7905741FA2CBDC0080E7D4 /* Build configuration list for PBXNativeTarget "SimpleWatch Extension" */;
+			buildPhases = (
+				FF40B8021267E2225FCEE01B /* [CP] Check Pods Manifest.lock */,
+				7C79055D1FA2CBDC0080E7D4 /* Sources */,
+				7C79055E1FA2CBDC0080E7D4 /* Frameworks */,
+				7C79055F1FA2CBDC0080E7D4 /* Resources */,
+				CD30ED569EC4C1F8CAD48164 /* [CP] Embed Pods Frameworks */,
+				9D3D56080679701C1200F4BA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleWatch Extension";
+			productName = "SimpleWatch Extension";
+			productReference = 7C7905611FA2CBDC0080E7D4 /* SimpleWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -134,10 +347,26 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TTS;
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "anton-matosov";
 				TargetAttributes = {
 					7C76D5621FA26B3F006A72F8 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 3E3XSM484P;
+						ProvisioningStyle = Automatic;
+					};
+					7C7905401FA2CBD20080E7D4 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 3E3XSM484P;
+						ProvisioningStyle = Automatic;
+					};
+					7C7905541FA2CBDC0080E7D4 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 3E3XSM484P;
+						ProvisioningStyle = Automatic;
+					};
+					7C7905601FA2CBDC0080E7D4 = {
 						CreatedOnToolsVersion = 9.0;
 						DevelopmentTeam = 3E3XSM484P;
 						ProvisioningStyle = Automatic;
@@ -158,6 +387,9 @@
 			projectRoot = "";
 			targets = (
 				7C76D5621FA26B3F006A72F8 /* TestSpecs_Dummy */,
+				7C7905401FA2CBD20080E7D4 /* SimpleApp */,
+				7C7905541FA2CBDC0080E7D4 /* SimpleWatch */,
+				7C7905601FA2CBDC0080E7D4 /* SimpleWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -170,38 +402,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C79053F1FA2CBD20080E7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C79054E1FA2CBD30080E7D4 /* LaunchScreen.storyboard in Resources */,
+				7C79054B1FA2CBD30080E7D4 /* Assets.xcassets in Resources */,
+				7C7905491FA2CBD30080E7D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7905531FA2CBDC0080E7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C79055B1FA2CBDC0080E7D4 /* Assets.xcassets in Resources */,
+				7C7905591FA2CBDC0080E7D4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C79055F1FA2CBDC0080E7D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C79056D1FA2CBDC0080E7D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		59693C2BA26D86C210A3E6CE /* [CP] Check Pods Manifest.lock */ = {
+		3045D0204FBD0B1B149F66FF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TestSpecs_Dummy-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6BDA53F639B98BFA6E69D885 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TestSpecs_Dummy/Pods-TestSpecs_Dummy-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/TestSpecs/TestSpecs.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleApp/Pods-SimpleApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa-iOS/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift-iOS/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-iOS/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/TestSpecs-iOS/TestSpecs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -212,10 +453,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestSpecs_Dummy/Pods-TestSpecs_Dummy-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleApp/Pods-SimpleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7336C09ABC7DC917D3BE7695 /* [CP] Copy Pods Resources */ = {
+		4B9DB3AB98A9A43E700066CE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,7 +468,113 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestSpecs_Dummy/Pods-TestSpecs_Dummy-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleApp/Pods-SimpleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D3D56080679701C1200F4BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleWatch Extension/Pods-SimpleWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6043996311383B8FA9C6734 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD30ED569EC4C1F8CAD48164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleWatch Extension/Pods-SimpleWatch Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa-watchOS/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift-watchOS/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-watchOS/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleWatch Extension/Pods-SimpleWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDBF7EBD6D6F6CFC6B652D61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleWatch/Pods-SimpleWatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B56C266EB40F13B2C8DB6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF40B8021267E2225FCEE01B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -241,7 +588,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C79053D1FA2CBD20080E7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7905461FA2CBD30080E7D4 /* ViewController.swift in Sources */,
+				7C7905441FA2CBD30080E7D4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C79055D1FA2CBDC0080E7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C79056B1FA2CBDC0080E7D4 /* NotificationController.swift in Sources */,
+				7C7905691FA2CBDC0080E7D4 /* ExtensionDelegate.swift in Sources */,
+				7C7905671FA2CBDC0080E7D4 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C7905641FA2CBDC0080E7D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C7905601FA2CBDC0080E7D4 /* SimpleWatch Extension */;
+			targetProxy = 7C7905631FA2CBDC0080E7D4 /* PBXContainerItemProxy */;
+		};
+		7C7905711FA2CBDC0080E7D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C7905541FA2CBDC0080E7D4 /* SimpleWatch */;
+			targetProxy = 7C7905701FA2CBDC0080E7D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C7905471FA2CBD30080E7D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C7905481FA2CBD30080E7D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C79054C1FA2CBD30080E7D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C79054D1FA2CBD30080E7D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7C7905571FA2CBDC0080E7D4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C7905581FA2CBDC0080E7D4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6003F5BD195388D20070C39A /* Debug */ = {
@@ -319,7 +725,6 @@
 		};
 		7C76D5691FA26B3F006A72F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64F979DE80B1E1AA4C2F8704 /* Pods-TestSpecs_Dummy.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -354,7 +759,6 @@
 		};
 		7C76D56A1FA26B3F006A72F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F10577353D55AE633D9CAAC /* Pods-TestSpecs_Dummy.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -388,6 +792,248 @@
 			};
 			name = Release;
 		};
+		7C7905501FA2CBD30080E7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3616B04926EADA56B948C57A /* Pods-SimpleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3E3XSM484P;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SimpleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tenx.SimpleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C7905511FA2CBD30080E7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B79AF7A869921C0B15AD733B /* Pods-SimpleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3E3XSM484P;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SimpleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tenx.SimpleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7C7905751FA2CBDC0080E7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C97944E22D9C3FBCD312D0 /* Pods-SimpleWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3E3XSM484P;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SimpleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tenx.SimpleApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		7C7905761FA2CBDC0080E7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5487E93E436FE12D6AE474 /* Pods-SimpleWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3E3XSM484P;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "SimpleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tenx.SimpleApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		7C7905791FA2CBDC0080E7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C9B375742982E167DCE15D /* Pods-SimpleWatch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3E3XSM484P;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = SimpleWatch_Extension;
+				INFOPLIST_FILE = SimpleWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tenx.SimpleApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		7C79057A1FA2CBDC0080E7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3251CD6718D6E4A8CC3C6E9C /* Pods-SimpleWatch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3E3XSM484P;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = SimpleWatch_Extension;
+				INFOPLIST_FILE = SimpleWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tenx.SimpleApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +1051,33 @@
 			buildConfigurations = (
 				7C76D5691FA26B3F006A72F8 /* Debug */,
 				7C76D56A1FA26B3F006A72F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C7905521FA2CBD30080E7D4 /* Build configuration list for PBXNativeTarget "SimpleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7905501FA2CBD30080E7D4 /* Debug */,
+				7C7905511FA2CBD30080E7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C7905741FA2CBDC0080E7D4 /* Build configuration list for PBXNativeTarget "SimpleWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7905751FA2CBDC0080E7D4 /* Debug */,
+				7C7905761FA2CBDC0080E7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C7905781FA2CBDC0080E7D4 /* Build configuration list for PBXNativeTarget "SimpleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7905791FA2CBDC0080E7D4 /* Debug */,
+				7C79057A1FA2CBDC0080E7D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

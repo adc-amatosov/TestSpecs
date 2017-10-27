@@ -15,15 +15,26 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "8.0",
+    "watchos": "4.0"
   },
-  "source_files": "TestSpecs/Classes/**/*",
-  "dependencies": {
-    "ReactiveCocoa": [
+  "ios": {
+    "source_files": "TestSpecs/Classes/**/*",
+    "dependencies": {
+      "ReactiveCocoa": [
 
-    ]
+      ]
+    },
+    "frameworks": "Accelerate"
   },
-  "frameworks": "Accelerate",
+  "watchos": {
+    "source_files": "TestSpecs/Watch/**/*",
+    "dependencies": {
+      "ReactiveCocoa": [
+
+      ]
+    }
+  },
   "testspecs": [
     {
       "name": "Tests",
