@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "06FFF2C655293A9C5733DCBE8DA14697"
+               BlueprintIdentifier = "9FDC6F25720C1CFB11FCB526AF476213"
                BuildableName = "TestSpecs.framework"
                BlueprintName = "TestSpecs"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -33,7 +33,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "252237B0B3B4CE3995D2CE7490F1327A"
+               BlueprintIdentifier = "E54A077D94C0858D0C8F4F8D6EC5985C"
                BuildableName = "TestSpecs-Unit-Tests.xctest"
                BlueprintName = "TestSpecs-Unit-Tests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -57,7 +57,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "06FFF2C655293A9C5733DCBE8DA14697"
+            BlueprintIdentifier = "9FDC6F25720C1CFB11FCB526AF476213"
             BuildableName = "TestSpecs.framework"
             BlueprintName = "TestSpecs"
             ReferencedContainer = "container:Pods/Pods.xcodeproj">

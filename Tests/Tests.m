@@ -10,6 +10,8 @@
 
 @import Specta;
 @import Expecta;
+@import CoreTelephony;
+@import Accelerate; 
 
 SpecBegin(InitialSpecs)
 
